@@ -1,0 +1,23 @@
+<% include('./header.ejs') %>
+<header>
+  <h1>Node Talk</h1>
+  <h4>Bem-vindo!</h4>
+</header>
+<section>
+  <form action="/entrar" method="post">
+    <input
+      type="text"
+      class="mt1"
+      name="usuario[nome]"
+      placeholder="Digite o nome"
+    />
+    <input
+      type="text"
+      class="mt1"
+      name="usuario[email]"
+      placeholder="Digite o e-mail"
+    />
+    <button type="submit" class="mt1">Entrar</button>
+  </form>
+</section>
+<% include('./footer.ejs') %>
